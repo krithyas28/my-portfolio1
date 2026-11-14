@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<!-- saved from url=(0122)file:///C:/Users/SRINIVAS%20C%20S/Documents/Codex/2026-11-14/referenced-chatgpt-conversation-this-is-an/outputs/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101827">
+  <meta name="description" content="The portfolio of Your Name, a developer building thoughtful digital experiences.">
+  <title>Your Name — Developer Portfolio</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --navy: #101827;
+      --navy-light: #172337;
+      --panel: #182539;
+      --ink: #f3f5f8;
+      --muted: #aab6c7;
+      --orange: #ff8a3d;
+      --orange-light: #ffad70;
+      --line: rgba(220, 232, 246, .12);
+      --max-width: 1100px;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 82px; }
+    body {
+      margin: 0; background: var(--navy); color: var(--ink);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+    a { color: inherit; }
+    a:focus-visible, button:focus-visible { outline: 3px solid var(--orange-light); outline-offset: 4px; }
+    .skip-link { position: absolute; top: -60px; left: 1rem; z-index: 20; background: var(--orange); color: var(--navy); padding: .6rem 1rem; border-radius: 8px; font-weight: 700; }
+    .skip-link:focus { top: 1rem; }
+    .container { width: min(var(--max-width), calc(100% - 2.5rem)); margin-inline: auto; }
+    .site-header { position: sticky; top: 0; z-index: 10; background: rgba(16, 24, 39, .92); border-bottom: 1px solid var(--line); backdrop-filter: blur(14px); }
+    .nav-wrap { min-height: 72px; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+    .brand { display: inline-flex; align-items: center; gap: .7rem; color: var(--ink); text-decoration: none; font-weight: 750; letter-spacing: -.03em; }
+    .brand-mark { display: grid; place-items: center; width: 34px; height: 34px; border-radius: 10px; background: var(--orange); color: var(--navy); font-size: .9rem; }
+    .nav-links { display: flex; align-items: center; gap: 1.7rem; margin: 0; padding: 0; list-style: none; }
+    .nav-links a { text-decoration: none; color: var(--muted); font-size: .94rem; font-weight: 600; transition: color .2s ease; }
+    .nav-links a:hover, .nav-links a[aria-current="location"] { color: var(--orange-light); }
+    .menu-toggle { display: none; border: 1px solid var(--line); border-radius: 10px; background: transparent; color: var(--ink); padding: .55rem .7rem; font: inherit; font-size: .9rem; cursor: pointer; }
+    main { overflow: hidden; }
+    .hero { position: relative; padding: clamp(5rem, 11vw, 9rem) 0 clamp(5rem, 9vw, 7.5rem); }
+    .hero::after { content: ""; position: absolute; width: 390px; height: 390px; right: -130px; top: 15px; border-radius: 50%; background: radial-gradient(circle, rgba(255,138,61,.16), transparent 68%); pointer-events: none; }
+    .eyebrow { display: inline-flex; align-items: center; gap: .55rem; color: var(--orange-light); font-size: .78rem; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
+    .eyebrow::before { content: ""; width: 25px; height: 2px; background: var(--orange); }
+    h1 { max-width: 800px; margin: 1rem 0 1.2rem; font-size: clamp(2.8rem, 7vw, 5.6rem); line-height: 1.04; letter-spacing: -.065em; }
+    h1 span { color: var(--orange); }
+    .hero-copy { max-width: 620px; color: var(--muted); font-size: clamp(1.05rem, 2vw, 1.2rem); }
+    .actions { display: flex; flex-wrap: wrap; gap: .85rem; margin-top: 2rem; }
+    .button { display: inline-flex; align-items: center; justify-content: center; gap: .55rem; min-height: 48px; padding: .7rem 1.1rem; border: 1px solid transparent; border-radius: 10px; text-decoration: none; font-weight: 750; transition: transform .2s ease, background .2s ease, border-color .2s ease; }
+    .button:hover { transform: translateY(-2px); }
+    .button-primary { background: var(--orange); color: #171d27; }
+    .button-primary:hover { background: var(--orange-light); }
+    .button-secondary { border-color: var(--line); color: var(--ink); }
+    .button-secondary:hover { border-color: var(--orange); }
+    section { padding: clamp(4rem, 8vw, 6.5rem) 0; border-top: 1px solid var(--line); }
+    .section-heading { margin-bottom: 2.3rem; }
+    .section-heading h2 { margin: .55rem 0 .45rem; font-size: clamp(2rem, 4.5vw, 3rem); line-height: 1.15; letter-spacing: -.05em; }
+    .section-heading p { max-width: 620px; margin: 0; color: var(--muted); }
+    .about-grid { display: grid; grid-template-columns: 1.25fr .75fr; gap: clamp(2rem, 7vw, 6rem); align-items: center; }
+    .about-copy p { color: var(--muted); margin: 0 0 1rem; }
+    .about-note { padding: 1.6rem; border: 1px solid var(--line); border-radius: 18px; background: linear-gradient(145deg, rgba(255,138,61,.09), rgba(24,37,57,.7)); }
+    .about-note strong { display: block; color: var(--orange-light); font-size: 1.1rem; margin-bottom: .4rem; }
+    .about-note p { margin: 0; color: var(--muted); }
+    .skills-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: .8rem; }
+    .skill { padding: 1rem 1.1rem; border: 1px solid var(--line); border-radius: 12px; background: var(--navy-light); color: #dfe6ef; font-weight: 650; }
+    .skill::before { content: "✦"; margin-right: .65rem; color: var(--orange); }
+    .projects-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+    .project-card { display: flex; flex-direction: column; min-height: 285px; padding: 1.5rem; border: 1px solid var(--line); border-radius: 16px; background: linear-gradient(155deg, #1a2940, #141f30); transition: transform .22s ease, border-color .22s ease; }
+    .project-card:hover { transform: translateY(-5px); border-color: rgba(255,138,61,.55); }
+    .project-top { display: flex; align-items: center; justify-content: space-between; color: var(--orange-light); font-size: .82rem; font-weight: 750; }
+    .project-card h3 { margin: 1.4rem 0 .55rem; font-size: 1.3rem; letter-spacing: -.03em; }
+    .project-card p { margin: 0 0 1.4rem; color: var(--muted); font-size: .95rem; }
+    .tags { display: flex; flex-wrap: wrap; gap: .45rem; margin-top: auto; }
+    .tag { padding: .28rem .55rem; border-radius: 999px; background: rgba(255,255,255,.07); color: #c4cfdd; font-size: .75rem; }
+    .contact-panel { display: flex; justify-content: space-between; align-items: center; gap: 2rem; padding: clamp(1.5rem, 5vw, 3rem); border: 1px solid rgba(255,138,61,.28); border-radius: 20px; background: radial-gradient(ellipse at 100% 0, rgba(255,138,61,.13), transparent 55%), var(--navy-light); }
+    .contact-panel h2 { margin: .45rem 0; font-size: clamp(1.8rem, 4vw, 2.6rem); letter-spacing: -.05em; }
+    .contact-panel p { max-width: 560px; margin: 0; color: var(--muted); }
+    .contact-panel .button { flex: 0 0 auto; }
+    footer { padding: 1.5rem 0; border-top: 1px solid var(--line); color: var(--muted); font-size: .88rem; }
+    .footer-inner { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+    .footer-inner p { margin: 0; }
+    .back-top { color: var(--orange-light); text-decoration: none; font-weight: 650; }
+    @media (max-width: 760px) {
+      .menu-toggle { display: inline-flex; align-items: center; gap: .5rem; }
+      .menu-toggle .menu-icon { font-size: 1.1rem; line-height: 1; }
+      .nav-links { display: none; position: absolute; top: calc(100% + 1px); inset-inline: 0; padding: .7rem 1.25rem 1.1rem; flex-direction: column; align-items: stretch; gap: 0; background: #111c2c; border-bottom: 1px solid var(--line); }
+      .nav-links.is-open { display: flex; }
+      .nav-links a { display: block; padding: .75rem .25rem; }
+      .about-grid { grid-template-columns: 1fr; }
+      .projects-grid { grid-template-columns: 1fr; }
+      .project-card { min-height: 245px; }
+      .skills-grid { grid-template-columns: repeat(2, 1fr); }
+      .contact-panel { align-items: flex-start; flex-direction: column; }
+    }
+    @media (max-width: 420px) { .container { width: min(100% - 1.5rem, var(--max-width)); } .skills-grid { grid-template-columns: 1fr 1fr; gap: .55rem; } .skill { padding: .8rem .65rem; font-size: .9rem; } }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; } }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="file:///C:/Users/SRINIVAS%20C%20S/Documents/Codex/2026-11-14/referenced-chatgpt-conversation-this-is-an/outputs/index.html#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="file:///C:/Users/SRINIVAS%20C%20S/Documents/Codex/2026-11-14/referenced-chatgpt-conversation-this-is-an/outputs/index.html#home" aria-label="Your Name, home"><span class="brand-mark" aria-hidden="true">YN</span><span>Your Name</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation"><span class="menu-icon" aria-hidden="true">☰</span><span class="menu-label">Menu</span></button>
+      <nav aria-label="Main navigation">
+        <ul class="nav-links" id="primary-navigation">
+          <li><a href="file:///C:/Users/SRINIVAS%20C%20S/Documents/Codex/2026-11-14/referenced-chatgpt-conversation-this-is-an/outputs/index.html#about">About</a></li>
+          <li><a href="file:///C:/Users/SRINIVAS%20C%20S/Documents/Codex/2026-11-14/referenced-chatgpt-conversation-this-is-an/outputs/index.html#skills">Skills</a></li>
+          <li><a href="file:///C:/Users/SRINIVAS%20C%20S/Documents/Codex/2026-11-14/referenced-chatgpt-conversation-this-is-an/outputs/index.html#projects">Projects</a></li>
+          <li><a href="file:///C:/Users/SRINIVAS%20C%20S/Documents/Codex/2026-11-14/referenced-chatgpt-conversation-this-is-an/outputs/index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <div class="container">
+      <section class="hero" id="home" aria-labelledby="hero-title" style="border-top:0">
+        <span class="eyebrow">Developer portfolio</span>
+        <h1 id="hero-title">Hi, I’m <span>Your Name.</span><br>I build for the web.</h1>
+        <p class="hero-copy">I’m a [your role or focus] who enjoys turning ideas into clear, useful digital experiences. This is where I share what I’m learning and making.</p>
+        <div class="actions">
+          <a class="button button-primary" href="file:///C:/Users/SRINIVAS%20C%20S/Documents/Codex/2026-11-14/referenced-chatgpt-conversation-this-is-an/outputs/index.html#projects">Explore my work <span aria-hidden="true">↘</span></a>
+          <a class="button button-secondary" href="file:///C:/Users/SRINIVAS%20C%20S/Documents/Codex/2026-11-14/referenced-chatgpt-conversation-this-is-an/outputs/index.html#contact">Get in touch</a>
+        </div>
+      </section>
+      <section id="about" aria-labelledby="about-title">
+        <div class="about-grid">
+          <div class="about-copy">
+            <div class="section-heading"><span class="eyebrow">A little about me</span><h2 id="about-title">Curious by nature, building one project at a time.</h2></div>
+            <p>I’m [Your Name], based in [City, Country]. I’m interested in creating websites that feel simple to use and work well for everyone.</p>
+            <p>Right now, I’m focused on [what you’re learning or looking for]. Outside of coding, I enjoy [a hobby or interest]. Replace these notes with a few details that sound like you.</p>
+          </div>
+          <aside class="about-note"><strong>Currently looking for</strong><p>[An internship, a junior developer role, freelance projects, or people to build with.]</p></aside>
+        </div>
+      </section>
+      <section id="skills" aria-labelledby="skills-title">
+        <div class="section-heading"><span class="eyebrow">What I work with</span><h2 id="skills-title">Skills &amp; tools</h2><p>Update this list to match the tools you know and the ones you’re learning.</p></div>
+        <div class="skills-grid" role="list" aria-label="Skills">
+          <div class="skill" role="listitem">HTML</div><div class="skill" role="listitem">CSS</div><div class="skill" role="listitem">JavaScript</div><div class="skill" role="listitem">Responsive design</div><div class="skill" role="listitem">Git &amp; GitHub</div><div class="skill" role="listitem">Accessibility</div><div class="skill" role="listitem">[Your tool]</div><div class="skill" role="listitem">[Your tool]</div>
+        </div>
+      </section>
+      <section id="projects" aria-labelledby="projects-title">
+        <div class="section-heading"><span class="eyebrow">Selected work</span><h2 id="projects-title">Projects</h2><p>A few examples of what I’ve been making. Swap in your real projects and add working links.</p></div>
+        <div class="projects-grid">
+          <article class="project-card"><div class="project-top"><span>PROJECT 01</span><span aria-hidden="true">↗</span></div><h3>Personal site</h3><p>A responsive website introducing me, my interests, and the work I want to do next.</p><div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Responsive</span></div></article>
+          <article class="project-card"><div class="project-top"><span>PROJECT 02</span><span aria-hidden="true">↗</span></div><h3>[Project name]</h3><p>[Describe the problem this project solves, what you built, and one thing you learned.]</p><div class="tags"><span class="tag">[Tool]</span><span class="tag">[Tool]</span></div></article>
+          <article class="project-card"><div class="project-top"><span>PROJECT 03</span><span aria-hidden="true">↗</span></div><h3>[Project name]</h3><p>[Add a short, specific description. Mention your role and the result if you can.]</p><div class="tags"><span class="tag">[Tool]</span><span class="tag">[Tool]</span></div></article>
+        </div>
+      </section>
+      <section id="contact" aria-labelledby="contact-title">
+        <div class="contact-panel">
+          <div><span class="eyebrow">Contact</span><h2 id="contact-title">Let’s make something useful.</h2><p>Have an opportunity, a question, or an idea to share? I’d be happy to hear from you.</p></div>
+          <!-- CUSTOMIZE: replace the email address below with your own. -->
+          <a class="button button-primary" href="mailto:hello@example.com">Email me <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer><div class="container footer-inner"><p>© <span id="year">2026</span> Your Name · Made with care.</p><a class="back-top" href="file:///C:/Users/SRINIVAS%20C%20S/Documents/Codex/2026-11-14/referenced-chatgpt-conversation-this-is-an/outputs/index.html#home">Back to top ↑</a></div></footer>
+  <script>
+    // Mobile navigation: keep its expanded state in sync and close it after choosing a section.
+    const menuButton = document.querySelector('.menu-toggle');
+    const menu = document.querySelector('#primary-navigation');
+    const menuLabel = menuButton.querySelector('.menu-label');
+    const menuIcon = menuButton.querySelector('.menu-icon');
+
+    function setMenuOpen(open) {
+      menuButton.setAttribute('aria-expanded', String(open));
+      menu.classList.toggle('is-open', open);
+      menuLabel.textContent = open ? 'Close' : 'Menu';
+      menuIcon.textContent = open ? '×' : '☰';
+    }
+
+    menuButton.addEventListener('click', () => {
+      setMenuOpen(menuButton.getAttribute('aria-expanded') !== 'true');
+    });
+    menu.querySelectorAll('a').forEach((link) => {
+      link.addEventListener('click', () => setMenuOpen(false));
+    });
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && menuButton.getAttribute('aria-expanded') === 'true') {
+        setMenuOpen(false);
+        menuButton.focus();
+      }
+    });
+    document.querySelector('#year').textContent = new Date().getFullYear();
+  </script>
+
+
+</body></html>
